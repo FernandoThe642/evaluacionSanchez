@@ -1,1 +1,31 @@
-<p>presidente works!</p>
+<div class="formulario-contenedor">
+    <h2>Insertar Presidente</h2>
+
+<label>Cédula:</label>
+<input type="text" [(ngModel)]="presidente.cedula">
+
+<label>Nombre:</label>
+<input type="text" [(ngModel)]="presidente.nombre">
+
+<label>Dirección:</label>
+<input type="text" [(ngModel)]="presidente.direccion">
+
+<label>Teléfono:</label>
+<input type="text" [(ngModel)]="presidente.telefono">
+
+<h3>Vicepresidente</h3>
+
+<label>Cédula:</label>
+<input type="text" [(ngModel)]="presidente.vicepresidente.cedula">
+
+<label>Nombre:</label>
+<input type="text" [(ngModel)]="presidente.vicepresidente.nombre">
+
+<label>Dirección:</label>
+<input type="text" [(ngModel)]="presidente.vicepresidente.direccion">
+
+<label>Teléfono:</label>
+<input type="text" [(ngModel)]="presidente.vicepresidente.telefono">
+
+<button (click)="insertarPresidente()">Guardar</button>
+</div>
